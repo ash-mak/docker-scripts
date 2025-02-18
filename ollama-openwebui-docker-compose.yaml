@@ -7,7 +7,7 @@ services:
     volumes:
       - open-webui:/app/backend/data
     extra_hosts:
-      - "host.docker.internal:host-gateway"
+      - host.docker.internal:host-gateway
     depends_on:
       - ollama
     restart: unless-stopped
